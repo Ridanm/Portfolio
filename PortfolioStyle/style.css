@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300;1,400;1,600;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: rgb(221, 233, 231);
+    font-family: 'Exo 2', sans-serif;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    background:rgb(39, 228, 196);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.link{
+    text-decoration: none;
+    display: block;
+    margin-right:25px;
+    padding: 20px;
+    /*background:rgb(33, 231, 139);*/
+    font-weight: 900;
+    font-family:Verdana, sans-serif;
+    color:rgb(19, 7, 7);
+}
+
+.welcome{
+    margin-top: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background:rgba(0, 4, 243, 0.699);
+    height: 100vh;
+}
+ 
+@media (max-width: 500px){
+    .navbar{
+        flex-direction: column;
+        height: 200px;
+        background:rgba(209, 209, 214, 0.699)
+    }
+}
