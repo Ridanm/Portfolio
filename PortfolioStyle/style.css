@@ -18,7 +18,6 @@
 
 .body{
     font-family: 'Exo 2', sans-serif;
-    height: 100%;
 }
 
 .contenedor{
@@ -31,7 +30,7 @@
 .navbar{
     display: flex;
     justify-content: flex-end;
-    background: rgb(181, 184, 29);
+    background: rgb(168, 168, 97);
     align-items: center;
     padding: 0;
     height: 70px;
@@ -150,7 +149,7 @@
 @media (max-width: 770px){
     .navbar{
         height: 60px;
-        background:rgb(225, 228, 50);
+        background:rgb(165, 167, 60);
     }
 
     .link{
@@ -178,11 +177,17 @@
         font-size: 1rem;
         margin: 0;
     }
-
+    
     .titulo-seccion{
-        width: 90%;
+        width: 95%;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 14px;
+        
+    }
+
+    .copy{
+        width: 90%;
+        padding-left: 20px;
     }
 
     .footer li{
