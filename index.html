@@ -9,52 +9,71 @@
     <title>Portafolio Personal</title>
 </head>
 
-<body>
-    <main class="main">
-        <header class="header">
-            <ul id="navbar" class="navbar">
-                <li><a class="link" href="#Desarrollador">Desarrollador</a></li>
-                <li><a class="link" href="#Trabajo">Trabajo</a></li>
-                <li><a class="link" id="profile-link" href="#Contacto">Contacto</a></li>
-            </ul>
-        </header>
-        <section id="welcome-section" class="welcome">
-            <h1>
-                Bienvenidos soy:
-            </h1>
-            <h1>Richard_M</h1>
-            <p>Desarrollador web</p>
-            
+<body class="body">
+    <header class="header">
+       <nav id="navbar" class="navbar contenedor">   
+        <ul class="enlaces">
+            <li><a class="link" href="#Desarrollador">Acerca de</a></li>
+            <li><a class="link" href="#Trabajo">Trabajos</a></li>
+            <li><a class="link" id="profile-link" href="#Contacto">Contacto</a></li>
+        </ul>
+       </nav>
+
+        <section id="welcome-section" class="hero">
+            <div class="contenedor-texto contenedor">
+                <h1 class="titulo-seccion">Bienvenidos soy Richard</h1>
+                <p class="copy">Desarrollador web</p>
+                <p class="copy">Aqui encontraran algunos de mis proyectos.</p>
+            </div>
         </section>
+    </header>
 
+    <main class="main">
         <section id="projects" class="projects">
-            <h2>Mis trabajos en desarrollo web</h2>
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Mis trabajos en desarrollo web</h2>
+                <div class="contenedor-imagenes">
+                    <figure class="imgs">
+                        <a class="description-link" href="https://codepen.io/Ridanm/full/QWGVQJW" target="_blank">
+                            <img .class="img-1" width="100%" height="100%"
+                                src="https://res.cloudinary.com/shadow-1/image/upload/v1616939824/Java_Document_vkk188.jpg"
+                                alt="Documentación sobre Java">
+                        </a>
+                        <figcaption id="project-title" class="descripcion">Document Java
+                        </figcaption>
+                    </figure>
 
-            <figure class="imgs">
-                    <img height="350" src="https://res.cloudinary.com/shadow-1/image/upload/v1616718444/Captura_de_pantalla_4_ymjwn6.png" alt="Documentación sobre Java">
-                    <figcaption>
-                    <span id="project-title" class="descripcion">Documentación sobre Java</span>
-                </figcaption>
-            </figure>
+                    <figure class="imgs">
+                        <a class="description-link" href="https://codepen.io/Ridanm/full/ZEBQLyX" target="_blank">
+                            <img class="img-2" width="100%" height="100%"
+                                src="https://res.cloudinary.com/shadow-1/image/upload/v1616717612/Captura_de_pantalla_10_udk7zj.png"
+                                alt="Página de formulario">
+                        </a>
+                        <figcaption id="project-title" class="descripcion">Formulario de encuesta
+                        </figcaption>
+                    </figure>
 
-            <figure class="imgs">
-                <img height="350" src="https://res.cloudinary.com/shadow-1/image/upload/v1616717612/Captura_de_pantalla_10_udk7zj.png" alt="Página de formulario">
-                <figcaption><span id="project-title" class="descripcion">Formulario de encuesta</span>
-                </figcaption>
-            </figure>
+                    <figure class="imgs">
+                        <a class="description-link" href="https://codepen.io/Ridanm/full/YzpKVVP" target="_blank">
+                            <img class="img-3" width="100%" height="100%"
+                                src="https://res.cloudinary.com/shadow-1/image/upload/v1616717627/Captura_de_pantalla_8_oqdwmr.png"
+                                alt="Tributo a Garfield">
+                        </a>
+                        <figcaption id="project-title" class="descripcion">Página de tributo
+                        </figcaption>
+                    </figure>
 
-            <figure class="imgs">
-                <figcaption>
-                    <span id="project-title" class="descripcion"></span>
-                </figcaption>
-            </figure>
-
-            <figure class="imgs">
-                <figcaption>
-                    <span id="project-title" class="descripcion"></span>
-                </figcaption>
-            </figure>
-
+                    <figure class="imgs">
+                        <a class="description-link" href="https://codepen.io/Ridanm/full/OJbmQge" target="_blank">
+                            <img class="img-4" width="100%" height="100%"
+                                src="https://res.cloudinary.com/shadow-1/image/upload/v1616940418/P%C3%A1gina_de_venta_xbk6tz.jpg"
+                                alt="Venta de producto">
+                        </a>
+                        <figcaption id="project-title" class="descripcion">Venta de producto
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
         </section>
     </main>
 </body>

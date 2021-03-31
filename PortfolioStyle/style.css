@@ -1,85 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300;1,400;1,600;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;500;700;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.main{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: rgb(221, 233, 231);
+:root{
+    --color-texto: rgb(80, 27, 27);
+    --color-botones: #f88e02;
+    --color-fondo: #692cf8;
+    --color-verde: rgb(2, 252, 77);
+    --color-azul: rgb(0, 0, 255);
+    --padding-secciones: 60px 0;
+    --margin-elementos: 40px;
+}
+
+.body{
     font-family: 'Exo 2', sans-serif;
 }
 
+.contenedor{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--padding-secciones);
+}
+   /*Nav-bar*/
 .navbar{
-    list-style: none;
     display: flex;
     justify-content: flex-end;
-    height: 80px;
-    background:rgb(5, 5, 5);
+    background: rgb(181, 184, 29);
     align-items: center;
+    padding: 0;
+    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+}
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
 }
 
 .link{
     text-decoration: none;
-    display: block;
-    margin-right:25px;
-    padding: 20px;
-    /*background:rgb(33, 231, 139);*/
-    font-weight: 900;
+    font-weight: 500;
+    font-size: 1.2rem;
     font-family:Verdana, sans-serif;
-    color:rgb(255, 228, 228);
+    margin-right: 25px;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
 }
 
-.welcome{
-    margin-top: 80px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    background:rgba(0, 4, 243, 0.699);
-    width: 100%;
-    height: 100vh;
-    font-size: 2rem;
+  /*Main*/
+.titulo-seccion{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
 }
-  
-.projects{
+
+.hero{
+    height: 100vh;
+    background-image: url(/images/FondoHero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedor-texto{
+    padding: 0;
+    height: 100%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     align-items: center;
-    background:rgba(209, 209, 214, 0.699);
-    width: 100%;
+    justify-content: center;
+    color:rgb(14, 13, 13);
+    text-shadow: 1px 1px rgb(59, 216, 130);
+}
+
+.hero h1{
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    
+}
+
+.hero p{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    color:rgb(0, 0, 0);
+}
+
+   /*Contenedor de imágenes*/
+.projects{
+    background: rgb(199, 201, 114);
     height: 100%;
 }
 
-.projects h2{
-    font-size: 2rem;
-    padding: 70px 5px 40px 5px;
-} 
+.contenedor-imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
 .imgs{
-    background:rgba(54, 94, 54, 0.699);
+    display: block;
+    width: 40%;
+    margin: 30px;
     text-align: center;
-    padding-bottom: 15px;
-    margin: 15px;
+    box-shadow:  0 0 8px rgba(0, 0, 0, .4);
 }
 
-.descripcion{
-    color: rgb(143, 252, 234);
-    font-size: 1.4rem;
-}
-
-@media (max-width: 500px){
+   /*Media Query*/
+@media (max-width: 600px){
     .navbar{
-        flex-direction: column;
-        height: 200px;
-        background:rgba(209, 209, 214, 0.699)
+        height: 60px;
+        background:rgb(225, 228, 50);
+    }
+
+    .link{
+        color:rgb(0, 0, 0);
+    }
+    .imgs{
+        width: 100%;
+    }
+
+    .projects{
+        background:rgb(199, 201, 114);
+    }
+
+    .titulo-seccion{
+        padding-left: 30px;
     }
 }
+
+@media (max-width: 425px){
+    .descripcion{
+        color:rgb(5, 5, 5);
+    }
+
+    .link{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .titulo-seccion{
+        width: 90%;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .imgs{
+        padding-bottom: 25px;
+    }
+}
+

@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+.main{
+    background:rgb(187, 152, 107)
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.navbar ,.link{
+    text-decoration: none;
+}
+
+
+
+.projects h2{
+    text-align: center;
+    padding: 10px;
+    background: rgb(3, 236, 3);
+    text-shadow: 2px 2px rgba(68, 90, 219, 0.4);
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgs{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+    max-height: 100%;
+    margin: 30px;
+}
+
+.imgs, .descripcion{
+    display: block;
+    text-align: center;
+    background: rgb(5, 5, 5);
+    color:rgb(3, 236, 3);
+}
